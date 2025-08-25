@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - BURGER KING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="bk-header">
+    <div class="bk-nav">
+      <div class="bk-logo">
+        <h1>BURGER KING</h1>
+      </div>
+      <nav class="bk-menu">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="cart.html">CART</a>
+        <a href="login.html" class="login-btn">LOGIN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="bk-login-main">
+    <div class="bk-login-container">
+      <form class="bk-login-form">
+        <h2>LOGIN</h2>
+        <div class="bk-form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="bk-form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="bk-btn primary full-width">LOGIN</button>
+        <p class="bk-login-note">Don't have an account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bk-footer">
+    <p>© 2025 BURGER KING CORPORATION</p>
+  </footer>
+</body>
+</html>
