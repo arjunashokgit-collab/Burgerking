@@ -1,0 +1,373 @@
+/* Burger King Inspired Design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2c1810;
+  background-color: #fff;
+}
+
+/* Header Styles */
+.bk-header {
+  background: linear-gradient(135deg, #d62d20 0%, #ffaa00 100%);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.bk-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.bk-logo h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.bk-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bk-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.bk-menu a:hover {
+  transform: translateY(-2px);
+}
+
+.login-btn {
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+/* Main Content */
+.bk-main {
+  min-height: calc(100vh - 200px);
+}
+
+/* Hero Section */
+.bk-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 500px;
+}
+
+.bk-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #d62d20;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.bk-hero-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.bk-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bk-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.bk-btn.primary {
+  background: linear-gradient(135deg, #d62d20 0%, #ffaa00 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(214, 45, 32, 0.3);
+}
+
+.bk-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(214, 45, 32, 0.4);
+}
+
+.bk-btn.secondary {
+  background: transparent;
+  color: #d62d20;
+  border: 2px solid #d62d20;
+}
+
+.bk-btn.secondary:hover {
+  background: #d62d20;
+  color: white;
+}
+
+.bk-btn.full-width {
+  width: 100%;
+}
+
+.bk-hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Featured Section */
+.bk-featured {
+  background: #f8f8f8;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.bk-featured h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #d62d20;
+  margin-bottom: 3rem;
+}
+
+/* Grid Layout */
+.bk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.bk-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.bk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.bk-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bk-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #d62d20;
+  margin: 1rem;
+}
+
+.bk-card p {
+  color: #666;
+  margin: 0 1rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.bk-card .price {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffaa00;
+  margin: 1rem;
+}
+
+/* Container */
+.bk-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.bk-page-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #d62d20;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Menu Sections */
+.bk-menu-section {
+  margin-bottom: 4rem;
+}
+
+.bk-menu-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d62d20;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Login Styles */
+.bk-login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+}
+
+.bk-login-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.bk-login-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.bk-login-form h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d62d20;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bk-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.bk-form-group label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.bk-form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.bk-form-group input:focus {
+  outline: none;
+  border-color: #d62d20;
+}
+
+.bk-login-note {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.bk-login-note a {
+  color: #d62d20;
+  text-decoration: none;
+}
+
+/* Cart Styles */
+.bk-cart-content {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bk-cart-empty {
+  text-align: center;
+}
+
+.bk-cart-empty h3 {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.bk-cart-empty p {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.bk-footer {
+  background: #2c1810;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bk-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .bk-menu {
+    gap: 1rem;
+  }
+  
+  .bk-hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .bk-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .bk-cta {
+    justify-content: center;
+  }
+  
+  .bk-container {
+    padding: 1rem;
+  }
+  
+  .bk-page-title {
+    font-size: 2rem;
+  }
+}
